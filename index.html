@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Flight Simulator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="info">
+      Simple Flight Simulator<br />
+      [W/S] or [↑/↓]: Throttle | [A/D] or [←/→]: Roll | [Q/E]: Yaw (Rudder) |
+      [R/F]: Pitch (Elevator) <br />
+      Reach takeoff speed (~50) to lift off. | [Backspace]: Reset
+    </div>
+    <div id="hud">
+      <div id="speedometer">Speed: 0</div>
+      <div id="altimeter">Altitude: 0</div>
+    </div>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+        }
+      }
+    </script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

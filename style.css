@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  overflow: hidden; /* Hide scrollbars */
+  font-family: Arial, sans-serif;
+  background-color: #87ceeb; /* Sky blue background */
+}
+
+#info {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  display: block;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+#hud {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+#speedometer, #altimeter {
+  margin-bottom: 5px;
+}
+
+canvas {
+  display: block; /* Remove potential extra space below canvas */
+}
